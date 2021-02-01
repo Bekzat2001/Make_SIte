@@ -6,6 +6,7 @@
 .header .top-nav {
     padding: 20px;
     display: flex;
+    box-shadow: 0 0 10px #df83f180;
 }
 
 .header .top-nav .logo,
@@ -16,5 +17,36 @@
 .top-nav .navigation {
     width: 60%;
     display: flex;
-    padding: 5px 15px;
+    list-style: none;
+}
+
+.logo .logo-content {
+    font-size: 24px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.navigation .nav-item {
+    padding: 7px 15px;
+}
+
+.navigation .nav-item .nav-link {
+    text-decoration: none;
+    color: #912fa0;
+    font-weight: 600;
+}
+
+.navigation .nav-item .nav-link.active {
+    color: blueviolet;
+    border-bottom: 1px solid blueviolet;
+    font-weight: 700;
+}
+
+.log .btn {
+    padding: 6px 15px;
+    background-color: blueviolet;
+    color: #f6f6f6;
+    border: 1px solid blueviolet;
+    border-radius: 3px;
+    cursor: pointer;
 }
