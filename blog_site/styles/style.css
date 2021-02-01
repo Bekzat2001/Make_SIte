@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header .top-nav {
+    padding: 20px;
+    display: flex;
+}
+
+.header .top-nav .logo,
+.header .top-nav .log {
+    width: 20%;
+}
+
+.top-nav .navigation {
+    width: 60%;
+    display: flex;
+    padding: 5px 15px;
+}
