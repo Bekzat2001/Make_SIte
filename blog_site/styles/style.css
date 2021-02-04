@@ -1,7 +1,15 @@
+/**
+* Global
+*/
+
 * {
     padding: 0;
     margin: 0;
 }
+
+/**
+* Header
+*/
 
 .header .top-nav {
     padding: 20px;
@@ -50,3 +58,32 @@
     border-radius: 3px;
     cursor: pointer;
 }
+
+/**
+* Breadcrumb
+*/
+
+.breadcrumb {
+    display: flex;
+    width: 50%;
+    margin: 40px auto;
+}
+
+.breadcrumb .breadcrumb-item {
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.breadcrumb .parent-class {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.breadcrumb .breadcrumb-sign {
+    color: #a8a8a8;
+}
+
+.breadcrumb .child-class {
+    color: #8a8a8a;
+}
+
