@@ -87,3 +87,66 @@
     color: #8a8a8a;
 }
 
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container .row {
+    display: flex;
+}
+
+.container .row .col {
+    width: 100%;
+}
+
+.big-card {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+
+.big-card .card-body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    padding: 25px 50px;
+    background-color: #cd2be280;
+    border-radius: 10px;
+}
+
+.big-card .thumbnail .thumbnail-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.big-card .card-body .card-title {
+    color: white;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.big-card .user-profile .user-avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.big-card .user-profile .user-avatar .avatar-image {
+    width: 100%;
+    max-width: 100%;
+    border: 3px solid #dedede;
+    border-radius: 50%;
+}
+
+.big-card .user-profile .user-name {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 3px;
+}
