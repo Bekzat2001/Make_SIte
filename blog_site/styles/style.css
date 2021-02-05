@@ -19,6 +19,8 @@
 
 .header .top-nav .logo,
 .header .top-nav .log {
+    display: flex;  /* отрк код */
+    justify-content: center;
     width: 20%;
 }
 
@@ -32,6 +34,7 @@
     font-size: 24px;
     color: blueviolet;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .navigation .nav-item {
@@ -42,6 +45,11 @@
     text-decoration: none;
     color: #912fa0;
     font-weight: 600;
+}
+
+.navigation .nav-item .nav-link:hover {
+    color: blueviolet;
+    border-bottom: 1px solid blueviolet;
 }
 
 .navigation .nav-item .nav-link.active {
@@ -57,6 +65,11 @@
     border: 1px solid blueviolet;
     border-radius: 3px;
     cursor: pointer;
+    transition: transform .7s linear;
+}
+
+.log .btn:hover {
+    transform: scale(1.1, 1.1)
 }
 
 /**
@@ -70,13 +83,18 @@
 }
 
 .breadcrumb .breadcrumb-item {
-    padding: 0 10px;
+    margin: 0 10px;
     text-decoration: none;
 }
 
 .breadcrumb .parent-class {
     color: blueviolet;
     font-weight: bold;
+    border-bottom: 1px solid transparent;
+}
+
+.breadcrumb .parent-class:hover {
+    border-bottom: 1px solid blueviolet;
 }
 
 .breadcrumb .breadcrumb-sign {
@@ -85,6 +103,11 @@
 
 .breadcrumb .child-class {
     color: #8a8a8a;
+}
+
+.breadcrumb .child-class:hover {
+    color: blueviolet;
+    border-bottom: 1px solid blueviolet;
 }
 
 .container {
@@ -105,6 +128,10 @@
     width: 33.3%;
     max-width: 33.3%;
     min-width: 33.3%;
+}
+
+.container .row .col {
+    width: 100%;
 }
 
 /**
@@ -225,4 +252,42 @@
     padding: 10px 0;
     color: #686868;
     font-size: 14px;
+}
+
+.pagination-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    box-shadow: 0 0 10px #df83f180;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.pagination .page-item {
+    padding: 7px 15px;
+    border-right: 1px solid #df83f180;
+}
+
+.pagination .page-item .page-link {
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 14px;
+}
+
+.pagination .page-item:last-child {
+    border-right: none;
+}
+
+.pagination .page-item.active {
+    background-color: blueviolet;
+}
+
+.pagination .page-item.active .page-link {
+    color: white;
 }
